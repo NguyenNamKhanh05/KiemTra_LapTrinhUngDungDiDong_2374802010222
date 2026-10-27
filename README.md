@@ -48,3 +48,19 @@
 ## Minh chứng Câu 2
 
 ![Profile Intent](screenshots/cau2_profile_intent.png)
+
+# BÀI THI THỰC HÀNH - CÂU 3
+
+## Nội dung đã thực hiện
+
+- Thêm `ListView` (`lv_skills`) bên dưới phần Email và nút "Đăng xuất" trong `ProfileActivity`.
+- Ánh xạ `ListView` bằng `findViewById`.
+- Dữ liệu gồm 05 phần tử: "Lập trình Kotlin", "Thiết kế Layout XML", "Quản lý Git/GitHub", "Xử lý Intent", "Kiến trúc Android".
+- Gắn `ArrayAdapter` với layout mẫu `android.R.layout.simple_list_item_1` để đổ dữ liệu lên `ListView`.
+- Thiết lập `setOnItemClickListener`: chạm vào phần tử nào sẽ hiển thị `Toast` đúng tên phần tử đó.
+
+## Minh chứng Câu 3
+
+![ListView Display](screenshots/cau3_listview_display.png)
+
+![Item Click Toast](screenshots/cau3_item_click_toast.png)
