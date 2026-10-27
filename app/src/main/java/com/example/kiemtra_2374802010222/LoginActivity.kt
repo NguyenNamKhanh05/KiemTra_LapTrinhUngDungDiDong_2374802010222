@@ -1,5 +1,6 @@
 package com.example.kiemtra_2374802010222
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Button
@@ -49,7 +50,16 @@ class LoginActivity : AppCompatActivity() {
             } else {
                 tvStatus.text = "Xác thực thành công!"
                 tvStatus.setTextColor(getColor(R.color.status_success))
+
+                // Câu 2: điều hướng bằng Explicit Intent và truyền Email qua putExtra
+                val intent = Intent(this, ProfileActivity::class.java)
+                intent.putExtra(EXTRA_EMAIL, email)
+                startActivity(intent)
             }
         }
+    }
+
+    companion object {
+        const val EXTRA_EMAIL = "EXTRA_EMAIL"
     }
 }

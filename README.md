@@ -34,3 +34,17 @@
 ![Validation Error](screenshots/cau1_validation_error.png)
 
 ![Validation Success](screenshots/cau1_validation_success.png)
+
+# BÀI THI THỰC HÀNH - CÂU 2
+
+## Nội dung đã thực hiện
+
+- Thêm màn hình `ProfileActivity` với tiêu đề "Thông tin tài khoản", `TextView` hiển thị Email và nút "Đăng xuất".
+- Ánh xạ View bằng `findViewById`.
+- Khi xác thực thành công tại `LoginActivity`, tạo **Explicit Intent** chuyển sang `ProfileActivity` và đóng gói Email bằng `putExtra()`.
+- `ProfileActivity` đọc dữ liệu qua `intent.getStringExtra()` và hiển thị lên `TextView`.
+- Nút "Đăng xuất" gọi `finish()` để đóng màn hình và quay về `LoginActivity`.
+
+## Minh chứng Câu 2
+
+![Profile Intent](screenshots/cau2_profile_intent.png)
